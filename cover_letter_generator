@@ -1,0 +1,18 @@
+cover_letter_template = """
+{0}
+{1} | {2}
+
+Re: {3}
+Dear Hiring Manager,
+	I’m committed to becoming a Software Developer and I’ve won Hackathons to prove it! I have experience working as a Software Developer as well as a Data Scientist. I’ve worked with technologies and languages such as MySQL, Node.js, Express.js, ejs, C, C++, Java, Python, Git as well as unit testing platforms such as JUnit. I have strong experience programming applications as well as designing and implementing databases with which I could help Splunk develop software!
+	To complement my technical abilities, I have strong communication and interpersonal skills. For example, I recently participated in a forty-eight hour software development competition hosted by the City of Vancouver in which my team placed in the top three. We were tasked with developing software to reduce vehicle collisions. I talked with road users and City of Vancouver engineers to better understand what roadside issues needed resolving. We then developed a responsive solution and delivered presentation to a panel of judges. We achieved this ranking because we communicated with stakeholders, worked as a group and solved a real problem.
+	Interning at {4} would be a valuable opportunity to learn from software developers established in their field as well as an opportunity to learn about the mining industry. I look forward to discussing how I could contribute to the firm.
+I greatly appreciate your consideration and hope to hear from you soon.
+Sincerely,
+{1}
+"""
+
+def create_cover_letter(_cover_letter_template, _applicant_name, _applicant_email, _applicant_phone, _position_name, _company_name):
+  return _cover_letter_template.format(_applicant_name, _applicant_email, _applicant_phone, _position_name, _company_name)
+
+print(create_cover_letter(cover_letter_template, 'Maximilian Was Damji', 'maximilian.computers@gmail.com', '604 - 441 - 8710', 'Software Engineer Co-op', 'Co. Boom'))
